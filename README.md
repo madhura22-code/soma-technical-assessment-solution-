@@ -242,4 +242,13 @@ model Todo {
 ```
 
 
-image.png
+![Image Generation + Task list](https://github.com/user-attachments/assets/7c0169d1-1a6c-4658-bf30-d7b331268912)
+![Task Dependency + dependency graph](https://github.com/user-attachments/assets/1ecf7749-b790-4f5e-982a-46e333bca197)
+![Task overdue red highlighted](https://github.com/user-attachments/assets/8e196af3-0b8e-4aca-ba06-e7a1bb608ba7)
+
+Task dependencies:
+Write proposal → Design UI
+Design UI → Implement UI
+Design UI → Write tests
+Implement UI → Deploy
+Write tests → Deploy
