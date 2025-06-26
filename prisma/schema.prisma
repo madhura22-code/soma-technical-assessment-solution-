@@ -8,7 +8,11 @@ datasource db {
 }
 
 model Todo {
-  id        Int      @id @default(autoincrement())
-  title     String
-  createdAt DateTime  @default(now())
+  id           Int      @id @default(autoincrement())
+  title        String
+  createdAt    DateTime @default(now())
+  dueDate      DateTime?
+  imageUrl     String?  // URL to the relevant image for this todo
+  dependencies String?  // JSON array of task IDs this task depends on
+  duration     Int?     // Duration in hours
 }
